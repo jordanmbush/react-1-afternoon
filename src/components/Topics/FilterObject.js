@@ -27,7 +27,6 @@ export default class FilterObject extends Component {
         let filteredArray = this.state.unFilteredArray.slice();
         console.log(filteredArray);
         filteredArray = filteredArray.filter( e => {
-            console.log(e);
             return e.hasOwnProperty(this.state.userInput);
         });
         this.setState({filteredArray: filteredArray, userInput: ''});
